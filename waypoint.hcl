@@ -7,7 +7,9 @@ app "web" {
     "env"     = "dev"
   }
   build {
-    use "pack" {}
+    use "docker" {
+	    disable_entrypoint = true
+    }
     registry {
       use "docker" {
         image = var.image
@@ -17,7 +19,9 @@ app "web" {
     }
   }
   deploy {
-    use "docker" {}
+    use "docker" {
+    disable_entrypoint = true
+    }
   }
 }
 
