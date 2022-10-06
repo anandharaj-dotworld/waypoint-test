@@ -16,8 +16,13 @@ app "web" {
     use "pack" {}
   }
 
-  deploy {
-    use "docker" {
+  registry {
+      use "docker" {
+        image    = "test"
+        tag      = "test_1"
+        username = "test"
+        password = "test"
+        local    = false
+      }
     }
-  }
 }
