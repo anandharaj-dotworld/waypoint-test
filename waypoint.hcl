@@ -14,6 +14,9 @@ runner {
 app "web" {
   build {
     use "docker" {
+      image = var.image
+      tag   = var.tag
+	    disable_entrypoint = true
     }
   }
 
