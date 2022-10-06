@@ -26,7 +26,7 @@ app "web" {
 }
 
 variable "image" {
-	default     = "waypoint-test/learn-inputvars-go"
+	default     = "anandharaj-dotworld/waypoint-test"
 	type        = string
 	description = "Image name for the built image in the Docker registry."
 }
