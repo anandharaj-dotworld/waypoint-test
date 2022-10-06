@@ -22,4 +22,7 @@ app "web" {
         local    = false
       }
   }
+  deploy {
+        use "docker" {}
+    }
 }
