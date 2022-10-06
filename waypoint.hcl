@@ -7,7 +7,6 @@ app "web" {
             disable_entrypoint = false
         }
     }
-  registry {}
 
     deploy {
         use "docker" {}
