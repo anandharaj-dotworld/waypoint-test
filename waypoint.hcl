@@ -7,7 +7,7 @@ runner {
 
   data_source "git" {
     url  = "https://github.com/anandharaj-dotworld/waypoint-test.git"
-    path = "static"
+    path = "main"
   }
 }
 
