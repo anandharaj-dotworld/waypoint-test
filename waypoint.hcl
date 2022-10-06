@@ -13,11 +13,7 @@ runner {
 
 app "web" {
   build {
-    use "docker" {
-      	image = "test"
-      	tag   = "test"
-	disable_entrypoint = true
-    }
+    use "docker" {}
   }
 
   deploy {
