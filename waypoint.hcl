@@ -13,7 +13,7 @@ runner {
 
 app "web" {
   build {
-    use "docker" {}
+    use "pack" {}
   }
 
   deploy {
