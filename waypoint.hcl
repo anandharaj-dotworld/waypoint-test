@@ -12,16 +12,6 @@ app "web" {
   build {
     use "pack" {}
   }
-
-  registry {
-      use "docker" {
-        image    = "test"
-        tag      = "test_1"
-        username = "test"
-        password = "test"
-        local    = false
-      }
-  }
   deploy {
         use "docker" {}
     }
