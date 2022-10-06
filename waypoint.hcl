@@ -21,4 +21,5 @@ app "web" {
         password = "test"
         local    = false
       }
+  }
 }
